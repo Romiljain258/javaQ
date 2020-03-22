@@ -1,0 +1,19 @@
+static int kth_PrimeFactor(int N, int K)
+	{
+		 int c=0;
+		   for(int i=2;i<=N;i++)
+		   {
+			   if(N%i==0)
+			   {
+				   N=N/i;
+				   c++;
+				   if(c==K)
+				   {
+					   return i;
+				   }
+				   i=1;
+			   }
+		   }
+		    return -1;
+		
+	}
