@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class Main
+{
+    public static void main(String[] args)
+	{
+    	Scanner obj=new Scanner(System.in);
+    	int T=obj.nextInt();
+		
+		int sum=0;
+		while(T>0)
+		{
+		int a=obj.nextInt();
+		int a1[][]=new int[a][a];
+		for(int i=0;i<a;i++)
+		  {
+			 for(int j=0;j<a;j++)
+			 {
+				             
+			   a1[i][j]=obj.nextInt();
+			                
+			 }
+		  }
+		
+		for(int i=a-1;i>=0;i--)
+		  {
+			 for(int j=0;j<a;j++)
+			 {
+				             
+			   System.out.print(a1[j][i]+" ");			                
+			 }
+			 System.out.println (" ");		
+		  }
+		
+		 
+		T--;
+	      }
+	}
+}
