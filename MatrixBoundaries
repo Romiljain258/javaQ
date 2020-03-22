@@ -1,0 +1,56 @@
+import java.util.Scanner;
+
+public class Main
+{
+    public static void main(String[] args)
+	{
+    	Scanner obj=new Scanner(System.in);
+    	int T=obj.nextInt();
+		int k=1;
+		int sum=0;
+		whil{
+			
+		int r=obj.nextInt();
+		int c=obj.nextInt();
+		int a1[][]=new int[r][c];
+		for(int i=0;i<r;i++)
+		  {
+			 for(int j=0;j<c;j++)
+			 {
+				             
+			   a1[i][j]=obj.nextInt();
+			                
+			 }
+		  }
+		while(k>0)
+		{
+		int i=0;
+		for(int j=0;j<c-1;j++)
+		{
+			System.out.print(a1[i][j]+" ");
+		}
+		int j = c-1;
+		for(i=0;i<r-1;i++)
+		{
+			System.out.print(a1[i][j]+" ");
+		}
+		i=r-1;
+		for(j=c-1;j>0;j--)
+		{
+			System.out.print(a1[i][j]+" ");
+		}
+		i=0;
+		for(j=r-1;j>0;j--)
+		{
+			System.out.print(a1[j][i]+" ");
+		}
+		k--;
+		}
+		T--;
+	      }
+	}
+}
+
+
+
+input->
