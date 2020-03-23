@@ -1,0 +1,45 @@
+import java.util.Scanner;
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner obj=new Scanner(System.in);
+        int T=obj.nextInt();
+        while(T>0)
+        {
+           int a=obj.nextInt();
+         long b=obj.nextInt();
+            long a1[]=new long[a];
+            
+            for(int i=0;i<a;i++)
+            {
+            	a1[i]=obj.nextInt();
+            }
+            int c=0;
+            for(int i=0;i<a;i++)
+            {
+            	for(int j=i+1;j<a;j++)
+            	{
+                    long x=a1[i];
+            		long y=a1[j];
+            		
+            		if((x^y)==b)
+            		{
+            			c++;
+            		}
+            	}
+            		
+            }
+            if(c>0) {
+            	System.out.print("yes");
+                }
+            else {
+            	System.out.print("No");
+                 }
+            T--;
+            System.out.println(" ");
+        }
+        
+    }
+}
