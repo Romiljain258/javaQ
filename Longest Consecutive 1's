@@ -1,0 +1,27 @@
+public static int maxConsecutiveOnes(int n) 
+
+	{
+		int c=0,sum=0;
+		String x=" ";
+		while(n!=0)
+		{
+			int t=n%2;
+			x=t+x;
+			n=n/2;
+		}
+		for(int i=0;i<x.length();i++)
+		{
+			if(x.charAt(i)=='1')
+			{
+				c++;
+			}
+			else
+			{
+				if(sum<c)
+				sum=c;
+				c=0;
+			}
+		}
+	return sum;
+	
+	}
